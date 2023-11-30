@@ -5,9 +5,9 @@ int lowerBound(int* arr, int target, int size) {
 	while(left < right) {
 		mid = left + (right - left) / 2;
 		if(arr[mid] <= target)
-			start = mid + 1;
+			left = mid + 1;
 		else
-			end = mid;
+			right = mid;
 			
 	}
 }
